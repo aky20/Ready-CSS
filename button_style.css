@@ -1,0 +1,521 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.code_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+pre.code_html{
+    width: 40%;
+    margin: auto;
+}
+pre.code_css{
+    width: 40%;
+    margin: auto;
+}
+code *{
+    font-size: 0.9rem;
+}
+.component_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_lg_btn{
+    cursor: pointer;
+    background-color: #ca6641;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 15px 16px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    transition: all 0.2s ease-in;
+}
+.bg_lg_btn:hover{
+    background-color: #ac5231;
+}
+.bg_md_btn{
+    cursor: pointer;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    transition: all 0.2s ease-in;
+}
+.bg_md_btn:hover{
+    background-color: rgb(206, 99, 99);
+}
+.bg_sm_btn{
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 7px 8px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    transition: all 0.2s ease-in;
+}
+.bg_sm_btn:hover{
+    background-color: rgb(21, 141, 135);
+}
+.rounded_bg_btn{
+    cursor: pointer;
+    background-color: #6a5287;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 15px 16px;
+    border-radius: 27px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    transition: all 0.2s ease-in;
+}
+.rounded_bg_btn:hover{
+    background-color: #533c6e;
+}
+.gradiant_lg_btn{
+    cursor: pointer;
+    background-image: linear-gradient(to left, rgb(253, 200, 48), rgb(243, 115, 53));
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 15px 16px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    transition: all 0.2s ease-in;
+}
+.gradiant_lg_btn:hover{
+    background-image: linear-gradient(to left, rgb(226, 178, 45), rgb(218, 103, 45));
+}
+.gradiant_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(138, 35, 135), rgb(233, 64, 87), rgb(242, 113, 33));
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.gradiant_md_btn:hover{
+    background-image: linear-gradient(to right, rgb(139, 25, 136), rgb(199, 43, 64), rgb(224, 102, 26));
+}
+.gradiant_sm_btn{
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(131, 96, 195), rgb(46, 191, 145));
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 7px 8px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    transition: all 0.2s ease-in;
+}
+.gradiant_sm_btn:hover{
+    background-image: linear-gradient(to right, rgb(102, 71, 158), rgb(29, 148, 110));
+}
+
+
+.rounded_gradiant_lg_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to left, rgb(168, 192, 255), rgb(63, 43, 150));
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 15px 16px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.rounded_gradiant_lg_btn:hover{
+    background-image: linear-gradient(to left, rgb(139, 164, 228), rgb(50, 33, 129));
+}
+.rounded_gradiant_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.rounded_gradiant_md_btn:hover{
+    background-image: linear-gradient(to right, rgb(221, 140, 69), rgb(233, 191, 64));
+}
+.rounded_gradiant_sm_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(255, 153, 102), rgb(255, 94, 98));
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 7px 8px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.rounded_gradiant_sm_btn:hover{
+    background-image: linear-gradient(to right, rgb(235, 139, 91), rgb(224, 78, 80))
+}
+
+.outline_lg_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: steelblue;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid steelblue;
+    padding: 12px 14px;
+    border-radius: 5px;
+}
+.outline_lg_btn:hover{
+    background-color: steelblue;
+    color: #fff;
+}
+.outline_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: yellowgreen;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid yellowgreen;
+    padding: 11px 12px;
+    border-radius: 5px;
+}
+.outline_md_btn:hover{
+    background-color: yellowgreen;
+    color: #fff;
+}
+.outline_sm_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: lightseagreen;
+    font-size: 0.9rem;
+    outline: none;
+    border: 2px solid lightseagreen;
+    padding: 7px 8px;
+    border-radius: 5px;
+}
+.outline_sm_btn:hover{
+    background-color: lightseagreen;
+    color: #fff;
+}
+
+.rounded_outline_lg_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: coral;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid coral;
+    padding: 12px 14px;
+    border-radius: 40px;
+}
+.rounded_outline_lg_btn:hover{
+    background-color: coral;
+    color: #fff;
+}
+.rounded_outline_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: crimson;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid crimson;
+    padding: 11px 12px;
+    border-radius: 30px;
+}
+.rounded_outline_md_btn:hover{
+    background-color: crimson;
+    color: #fff;
+}
+.rounded_outline_sm_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: darksalmon;
+    font-size: 0.9rem;
+    outline: none;
+    border: 2px solid darksalmon;
+    padding: 7px 8px;
+    border-radius: 30px;
+}
+.rounded_outline_sm_btn:hover{
+    background-color: darksalmon;
+    color: #fff;
+}
+
+.link_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background: none;
+    color: goldenrod;
+    font-size: 1.1rem;
+    padding: 7px 8px;
+    outline: none;
+    border: none;
+}
+.link_btn:hover{
+    text-decoration: underline;
+}
+
+.icon_btn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #cb464a;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    transition: all 0.2s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.icon_btn svg{
+    color: #fff;
+    width: 1.8rem;
+}
+.icon_btn:hover{
+    background-color: #000;
+}
+.rotate_icon_btn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #595a5c;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    transition: all 0.2s ease-in;
+    transform: rotate(0deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.rotate_icon_btn svg{
+    color: #fff;
+    width: 1.8rem;
+}
+.rotate_icon_btn:hover{
+    transform: rotate(-45deg);
+    background-color: #e8a64e;
+}
+.scale_icon_btn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #248bcc;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    transition: all 0.2s ease-in;
+    transform: scale(1,1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.scale_icon_btn svg{
+    color: #fff;
+    width: 1.6rem;
+}
+.scale_icon_btn:hover{
+    transform: scale(0.9,0.9);
+    background-color: #156ba0;
+}
+.skew_icon_btn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(131, 96, 195), rgb(46, 191, 145));
+    outline: none;
+    border: none;
+    border-radius: 40% 60% 43% 57% / 58% 40% 60% 42%;
+    transition: all 0.2s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.skew_icon_btn svg{
+    color: #fff;
+    width: 1.6rem;
+}
+.skew_icon_btn:hover{
+    border-radius: 40% 60% 58% 42% / 41% 46% 54% 59% ;
+    background-color: rgb(46, 191, 145);
+}
+
+.sink_lg_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #e4c500;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 15px 16px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 4px -1px #7d7019;
+}
+.sink_lg_btn:hover{
+    background-color: #ddc002;
+    box-shadow: inset 2px 2px 4px 0px #7d7019;
+}
+.sink_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 5px;
+    box-shadow: inset 2px 3px 4px -1px #af3b3b;
+}
+.sink_md_btn:hover{
+    background-color: rgb(216, 113, 113);
+    box-shadow: inset 2px 2px 3px 0px #963232;
+}
+.sink_sm_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 7px 8px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 4px -1px rgb(11, 100, 96);
+}
+.sink_sm_btn:hover{
+    background-color: rgb(29, 170, 163);
+    box-shadow: inset 2px 2px 4px 0px rgb(12, 102, 97);
+}
+
+.rounded_sink_lg_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #e4c500;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 15px 16px;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 4px -1px #7d7019;
+}
+.rounded_sink_lg_btn:hover{
+    background-color: rgb(29, 170, 163);
+    box-shadow: inset 2px 2px 4px 0px rgb(12, 102, 97);
+}
+.rounded_sink_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 30px;
+    box-shadow: inset 2px 3px 4px -1px #af3b3b;
+}
+.rounded_sink_md_btn:hover{
+    background-color: rgb(29, 170, 163);
+    box-shadow: inset 2px 2px 4px 0px rgb(12, 102, 97);
+}
+.rounded_sink_sm_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: lightseagreen;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 7px 8px;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 4px -1px rgb(11, 100, 96);
+}
+.rounded_sink_sm_btn:hover{
+    background-color: lightgreen;
+    box-shadow: inset 2px 3px 4px 0px rgb(58, 126, 58);
+}
+
+.danger_btn{
+    cursor: not-allowed;
+    background-color: crimson;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.danger_btn:hover{
+    background-color: rgb(247, 130, 154);
+}
+.rounded_danger_btn{
+    cursor: not-allowed;
+    background-color: crimson;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.rounded_danger_btn:hover{
+    background-color: rgb(247, 130, 154);
+}
+.switch_btn_1{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+}
+.switch_btn_1 .slider{
+    position: absolute;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.switch_btn_1 .slider:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 23px;
+    height: 23px;
+    top: 1px;
+    right: 1px;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+.switch_btn_1 input:checked + .slider{
+    background-color: #2196F3;
+}
+.switch_btn_1 input:checked + .slider:before {
+  transform: translateX(-15px);
+}

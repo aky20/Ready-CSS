@@ -1,0 +1,272 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.code_container{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+pre.code_html{
+    width: 80%;
+    margin: auto;
+}
+pre.code_css{
+    width: 70%;
+    margin: auto;
+}
+code *{
+    font-size: 0.9rem;
+}
+.component_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_1{
+    background-color: #fff;
+    width: 300px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.form_1 h1{
+    margin: 0 0 30px 0;
+    color: rgb(242, 153, 74);
+}
+.form_1 .input_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_1 input{
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 20px;
+    border-radius: 94% 6% 94% 6% / 0% 100% 0% 100% ;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: rgb(127, 127, 213);
+    box-shadow: rgb(242, 153, 74, 0.5) 0px 2px 8px 0px;
+    margin-bottom: 20px;
+}
+.form_1 input:focus{
+    box-shadow: rgb(242, 153, 74, 0.8) 0px 3px 8px; 
+}
+.form_1 .rounded_gradiant_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 14px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    margin-top: 20px;
+}
+.form_1 .rounded_gradiant_md_btn:hover{
+    background-image: linear-gradient(to right, rgb(221, 140, 69), rgb(233, 191, 64));
+}
+@media only screen and (max-width: 600px) {
+    .form_1{
+        width: 90%;
+        padding: 30px 15px;
+    }
+    .form_1 h1{
+        font-size: 1.4rem;
+    }
+}
+
+.form_2{
+    background-color: #fff;
+    width: 300px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form_2 h1{
+    margin: 0 0 30px 0;
+    color: yellowgreen;
+}
+.form_2 .input_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_2 input{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+    border: 2px solid yellowgreen;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.form_2 .outline_md_btn{
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: #fff;
+    color: yellowgreen;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid yellowgreen;
+    font-weight: bold;
+    padding: 9px 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.form_2 .outline_md_btn:hover{
+    background-color: yellowgreen;
+    color: #fff;
+}
+@media only screen and (max-width: 600px) {
+    .form_2{
+        width: 90%;
+        padding: 30px 15px;
+    }
+    .form_2 h1{
+        font-size: 1.4rem;
+    }
+}
+
+.form_3{
+    background-color: #1b1b1b;
+    width: 300px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(242, 153, 74);
+}
+.form_3 h1{
+    margin: 0 0 30px 0;
+    color: rgb(242, 153, 74);
+}
+.form_3 .input_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_3 input::placeholder{
+    color: rgb(242, 153, 74, 0.5);
+}
+.form_3 input{
+    font-family: 'Poppins', sans-serif;
+    padding: 12px 20px;
+    border-radius: 94% 6% 94% 6% / 0% 100% 0% 100% ;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    color: rgb(242, 153, 74);
+    box-shadow: rgba(12, 12, 12, 0.5) 0px 2px 8px 0px;
+    margin-bottom: 20px;
+    background-color: #252525;
+}
+.form_3 input:focus{
+    background-color: #313131;
+}
+.form_3 .rounded_gradiant_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(242, 153, 74), rgb(242, 201, 76));
+    color: #1b1b1b;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 14px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    margin-top: 20px;
+}
+.form_3 .rounded_gradiant_md_btn:hover{
+    background-image: linear-gradient(to right, rgb(221, 140, 69), rgb(233, 191, 64));
+}
+
+@media only screen and (max-width: 600px) {
+    .form_3{
+        width: 90%;
+        padding: 30px 15px;
+    }
+    .form_3 h1{
+        font-size: 1.4rem;
+    }
+}
+
+.form_4{
+    background-color: #fff;
+    width: 300px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: lightcoral;
+}
+.form_4 h1{
+    margin: 0 0 30px 0;
+    color: lightcoral;
+}
+.form_4 .input_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_4 input::placeholder{
+    color: lightcoral;
+}
+.form_4 input{
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-style: none none solid none;
+    border-width: 2px;
+    padding: 0 0 8px 0;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    color: lightcoral;
+    margin-bottom: 20px;
+}
+.form_4 input:focus{
+    padding: 0 0 10px 5px;
+}
+.form_4 .sink_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 5px;
+    box-shadow: inset 2px 3px 4px -1px #af3b3b;
+}
+.form_4 .sink_md_btn:hover{
+    background-color: rgb(216, 113, 113);
+    box-shadow: inset 2px 2px 3px 0px #963232;
+}
+@media only screen and (max-width: 600px) {
+    .form_4{
+        width: 90%;
+        padding: 30px 15px;
+    }
+    .form_4 h1{
+        font-size: 1.4rem;
+    }
+}

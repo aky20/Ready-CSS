@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="table.css">
+    <title>Table</title>
+</head>
+<body>
+    <div class="code_container">
+        <table class="table_1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th class="extra">Phone number</th>
+                <th class="extra">Total Consumers</th>
+                <th class="extra">Floor</th>
+                <th class="extra">Time</th>
+                <th class="table_more_column">More</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hellen</td>
+                <td class="extra">+95 09123123456</td>
+                <td class="extra">4</td>
+                <td class="extra">2</td>
+                <td class="extra">2:00 PM</td>
+                <td class="table_more_column">
+                    <p><span>Phone number : </span>+95 09123123456</p>
+                    <p><span>Total Consumers : </span>2</p>
+                    <p><span>Floor : </span>2</p>
+                    <p><span>Time : </span>2:00 PM</p>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sara</td>
+                <td class="extra">+95 09123123456</td>
+                <td class="extra">4</td>
+                <td class="extra">2</td>
+                <td class="extra">2:00 PM</td>
+                <td class="table_more_column">
+                    <p><span>Phone number : </span>+95 09123123456</p>
+                    <p><span>Total Consumers : </span>2</p>
+                    <p><span>Floor : </span>2</p>
+                    <p><span>Time : </span>2:00 PM</p>
+                </td>
+            </tr>
+        </table>
+        <pre class="code_html">
+            <code class="language-html">
+&lt;table class=&quot;table_1&quot;&gt;
+&lt;tr&gt;
+    &lt;th&gt;Id&lt;/th&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th class=&quot;extra&quot;&gt;Phone number&lt;/th&gt;
+    &lt;th class=&quot;extra&quot;&gt;Total Consumers&lt;/th&gt;
+    &lt;th class=&quot;extra&quot;&gt;Floor&lt;/th&gt;
+    &lt;th class=&quot;extra&quot;&gt;Time&lt;/th&gt;
+    &lt;th class=&quot;table_more_column&quot;&gt;More&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Hellen&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;+95 09123123456&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;4&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;2&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;2:00 PM&lt;/td&gt;
+    &lt;td class=&quot;table_more_column&quot;&gt;
+        &lt;p&gt;&lt;span&gt;Phone number : &lt;/span&gt;+95 09123123456&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;Total Consumers : &lt;/span&gt;2&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;Floor : &lt;/span&gt;2&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;Time : &lt;/span&gt;2:00 PM&lt;/p&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;Sara&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;+95 09123123456&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;4&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;2&lt;/td&gt;
+    &lt;td class=&quot;extra&quot;&gt;2:00 PM&lt;/td&gt;
+    &lt;td class=&quot;table_more_column&quot;&gt;
+        &lt;p&gt;&lt;span&gt;Phone number : &lt;/span&gt;+95 09123123456&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;Total Consumers : &lt;/span&gt;2&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;Floor : &lt;/span&gt;2&lt;/p&gt;
+        &lt;p&gt;&lt;span&gt;Time : &lt;/span&gt;2:00 PM&lt;/p&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+            </code>
+        </pre>
+        <pre class="code_css">
+            <code class="language-css">
+.table_1{
+    text-align: left;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-collapse: collapse;
+}
+.table_1 th{
+    font-weight: normal;
+    background-color: #5b5c5a;
+    color: #fff;
+    padding: 15px 10px;
+}
+.table_1 td{
+    background-color: #fff;
+    padding: 10px 10px;
+}
+.table_1 td p{
+    margin: 0;
+}
+.table_more_column{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .table_1{
+        width: 90%;
+        font-size: 0.7rem;
+    }
+    .table_1 .extra{
+        display: none;
+    }
+    .table_more_column{
+        display: block;
+    }
+    .table_1 span{
+        color: #5b5c5a;
+    }
+}
+            </code>
+        </pre>
+    </div>
+    <script src="./highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
