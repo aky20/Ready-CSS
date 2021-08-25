@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Kaisei+Decol:wght@500&family=Life+Savers:wght@700&family=Luckiest+Guy&family=Merriweather&family=Mogra&family=Poppins:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="design_test.css">
+    <title>Design Test</title>
+</head>
+<body>
+    <div class="a">
+        <div class="item square">
+            <input type="color" value="#faee1c">
+        </div>
+        <div class="item circle">
+            <input type="color" value="#faee1c">
+        </div>
+        <input type="color" value="#fc5c9c" onchange="change()">
+        <div class="b">
+            <div class="btn search_btn">
+                <input type="color" value="#fcefee">
+                <p>search</p>
+            </div>
+            <input type="text" id="header" value="Header" autofocus>
+            <input type="text" id="subheader" value="Subheader">
+            <textarea id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eveniet ipsum, nulla a libero eaque amet consequatur optio consectetur soluta rerum, obcaecati veniam reiciendis? Nobis veniam corrupti dolore dolores et?</textarea>
+            <input type="text" id="link" value="www.link.com">
+            <div class="btn rounded_btn">
+                <input type="color" value="#482ff7">
+                <p id="button">Click me</p>
+            </div>
+        </div>
+    </div>
+    <div class="edit_container">
+        <div class="text_color_container">
+            <label>Header color</label>
+            <div class="text_color">
+                <input type="color" value="#000000" id="header_text" onchange="changeColor(header_text)">
+            </div>
+            <select name="font" id="font_header" onchange="changeFont(font_header)">
+                <option value="Poppins">Poppins</option>
+                <option value="'Hina Mincho'">Hina Mincho</option>
+                <option value="Kaisei Decol">Kaisei Decol</option>
+                <option value="Life Savers">Life Savers</option>
+                <option value="Luckiest Guy">Luckiest Guy</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Mogra">Mogra</option>
+                <option value="Righteous">Righteous</option>
+            </select>
+        </div>
+        <div class="text_color_container">
+            <label>Sub header color</label>
+            <div class="text_color">
+                <input type="color" value="#000000" id="sub_header_text" onchange="changeColor(sub_header_text)">
+            </div>
+            <select name="font" id="font_subheader" onchange="changeFont(font_subheader)">
+                <option value="Poppins">Poppins</option>
+                <option value="'Hina Mincho'">Hina Mincho</option>
+                <option value="Kaisei Decol">Kaisei Decol</option>
+                <option value="Life Savers">Life Savers</option>
+                <option value="Luckiest Guy">Luckiest Guy</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Mogra">Mogra</option>
+                <option value="Righteous">Righteous</option>
+            </select>
+        </div>
+        <div class="text_color_container">
+            <label>Paragraph Color</label>
+            <div class="text_color">
+                <input type="color" value="#000000" id="paragraph_text" onchange="changeColor(paragraph_text)">
+            </div>
+            <select name="font" id="font_paragraph" onchange="changeFont(font_paragraph)">
+                <option value="Poppins">Poppins</option>
+                <option value="'Hina Mincho'">Hina Mincho</option>
+                <option value="Kaisei Decol">Kaisei Decol</option>
+                <option value="Life Savers">Life Savers</option>
+                <option value="Luckiest Guy">Luckiest Guy</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Mogra">Mogra</option>
+                <option value="Righteous">Righteous</option>
+            </select>
+        </div>
+        <div class="text_color_container">
+            <label>Link color</label>
+            <div class="text_color">
+                <input type="color" value="#000000" id="link_text" onchange="changeColor(link_text)">
+            </div>
+            <select name="font" id="font_link" onchange="changeFont(font_link)">
+                <option value="Poppins">Poppins</option>
+                <option value="'Hina Mincho'">Hina Mincho</option>
+                <option value="Kaisei Decol">Kaisei Decol</option>
+                <option value="Life Savers">Life Savers</option>
+                <option value="Luckiest Guy">Luckiest Guy</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Mogra">Mogra</option>
+                <option value="Righteous">Righteous</option>
+            </select>
+        </div>
+        <div class="text_color_container">
+            <label>Button Text Color</label>
+            <div class="text_color">
+                <input type="color" value="#000000" id="button_text" onchange="changeColor(button_text)">
+            </div>
+            <select name="font" id="font_button" onchange="changeFont(font_button)">
+                <option value="Poppins">Poppins</option>
+                <option value="'Hina Mincho'">Hina Mincho</option>
+                <option value="Kaisei Decol">Kaisei Decol</option>
+                <option value="Life Savers">Life Savers</option>
+                <option value="Luckiest Guy">Luckiest Guy</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Mogra">Mogra</option>
+                <option value="Righteous">Righteous</option>
+            </select>
+        </div>
+    </div>
+    <script>
+        function changeColor(e){
+            switch (e.id) {
+                case "header_text":
+                    document.getElementById("header").style.color = e.value;
+                    break;
+                case "sub_header_text":
+                    document.getElementById("subheader").style.color = e.value;
+                    break;
+                case "paragraph_text":
+                    document.getElementById("paragraph").style.color = e.value;
+                    break;
+                case "link_text":
+                    document.getElementById("link").style.color = e.value;
+                    break;
+                case "button_text":
+                    document.getElementById("button").style.color = e.value;
+                    break;
+                default:
+                    break;
+            }
+        }
+        function changeFont(e){
+            header_font_style = document.getElementById("font_header").value
+            subheader_font_style = document.getElementById("font_subheader").value
+            paragraph_font_style = document.getElementById("font_paragraph").value
+            link_font_style = document.getElementById("font_link").value
+            button_font_style = document.getElementById("font_button").value
+            document.getElementById("header").style.fontFamily = header_font_style;
+            document.getElementById("subheader").style.fontFamily = subheader_font_style;
+            document.getElementById("paragraph").style.fontFamily = paragraph_font_style;
+            document.getElementById("link").style.fontFamily = link_font_style;
+            document.getElementById("button").style.fontFamily = button_font_style;
+        }
+    </script>
+</body>
+</html>
