@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header_style.css">
+</head>
+<body>
+    <header class="blur_header">
+        <div class="background"></div>
+        <div class="background"></div>
+        <div class="title_container">
+            <h1>Welcome to Beauty</h1>
+            <button class="rounded_gradiant_sm_btn">
+                <a href="#blur_header">get code</a>
+            </button>
+        </div>
+    </header>
+
+    <header class="background_image_header">
+        <div class="wrapper"></div>
+        <div class="title_container">
+            <h1>Welcome to my site</h1>
+            <button class="outline_lg_btn">
+                <a href="#background_image_header">get code</a>
+            </button>
+        </div>
+    </header>
+
+    <header class="fashion_header">
+        <div class="text_background"></div>
+        <div class="text_container">
+            <h1>Pola<span>riod</span></h1>
+            <h2>fashion and accessories</h2>
+            <button class="rounded_gradiant_lg_btn">
+                <a href="#fashion_header">get code</a>
+            </button>
+        </div>
+        <div class="object_container">
+            <div class="object1"></div>
+            <div class="object2"></div>
+            <div class="img_container">
+                <img src="images/olga-serjantu--I0Eb9JcKjM-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="code_container" id="blur_header">
+        <pre class="code_html">
+            <code class="language-html">
+&lt;header class=&quot;blur_header&quot;&gt;
+&lt;div class=&quot;background&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;background&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;title_container&quot;&gt;
+    &lt;h1&gt;Welcome to Beauty&lt;/h1&gt;
+    &lt;button class=&quot;rounded_gradiant_sm_btn&quot;&gt;
+        get code
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+            </code>
+        </pre>
+        <pre class="code_css">
+            <code class="language-css">
+header.blur_header{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(255, 246, 219);
+}
+header.blur_header .background{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+header.blur_header .background:nth-child(1){
+    top: -100px;
+    left: -100px;
+    background-color: rgb(131, 118, 182);
+    border-radius: 54% 46% 72% 28% / 42% 17% 83% 58% ;
+    filter: drop-shadow(50px 50px 20px rgb(160, 236, 36)) blur(160px);
+}
+header.blur_header .background:nth-child(2){
+    bottom: -100px;
+    right: -100px;
+    background-color: rgb(255, 212, 82);
+    border-radius: 75% 25% 31% 69% / 79% 60% 40% 21% ;
+    filter: drop-shadow(-50px -50px 20px rgb(255, 56, 139)) blur(160px);
+}
+header.blur_header .title_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header.blur_header .title_container h1{
+    font-size: 4rem;
+    color: rgb(84, 74, 125);
+}
+header.blur_header .rounded_gradiant_sm_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(255, 153, 102), rgb(255, 94, 98));
+    color: #fff;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+header.blur_header .rounded_gradiant_sm_btn:hover{
+    background-image: linear-gradient(to left, rgb(255, 153, 102), rgb(255, 94, 98));
+}
+            </code>
+        </pre>
+    </div>
+    <div class="code_container" id="background_image_header">
+        <pre class="code_html">
+            <code class="language-html">
+&lt;header class=&quot;background_image_header&quot;&gt;
+&lt;div class=&quot;wrapper&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;title_container&quot;&gt;
+    &lt;h1&gt;Welcome to my site&lt;/h1&gt;
+    &lt;button class=&quot;outline_lg_btn&quot;&gt;
+        get code
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+            </code>
+        </pre>
+        <pre class="code_css">
+            <code class="language-css">
+header.background_image_header{
+    background: url('images/jan-henckens-ZQBpJZGwfKE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+header.background_image_header .wrapper{
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header.background_image_header h1{
+    margin: 0;  
+    color: #fff;
+    font-size: 4rem;
+}
+header.background_image_header .title_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header.background_image_header .outline_lg_btn{
+    margin-top: 20px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: rgb(71, 20, 119);
+    color: #fff;
+    font-size: 1.3rem;
+    outline: none;
+    border: 2px solid rgb(167, 73, 255);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+header.background_image_header .outline_lg_btn:hover{
+    background-color: rgb(167, 73, 255);
+}
+            </code>
+        </pre>
+    </div>
+    <div class="code_container" id="fashion_header">
+        <pre class="code_html">
+            <code class="language-html">
+&lt;header class=&quot;fashion_header&quot;&gt;
+&lt;div class=&quot;text_background&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;text_container&quot;&gt;
+    &lt;h1&gt;Pola&lt;span&gt;riod&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;fashion and accessories&lt;/h2&gt;
+    &lt;button class=&quot;rounded_gradiant_lg_btn&quot;&gt;
+        get code
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;object_container&quot;&gt;
+    &lt;div class=&quot;object1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;object2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;img_container&quot;&gt;
+        &lt;img src=&quot;images/olga-serjantu--I0Eb9JcKjM-unsplash.jpg&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+            </code>
+        </pre>
+        <pre class="code_css">
+            <code class="language-css">
+header.fashion_header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+header.fashion_header .text_background{
+    width: 60%;
+    height: 100%;
+    background-color: #5e0092;
+}
+header.fashion_header .text_container{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    color: #e0a6ff;
+    z-index: 1;
+}
+header.fashion_header .text_container h1{
+    font-size: 6rem;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #e0a6ff;
+    letter-spacing: 7px;
+    color: #fff;
+}
+header.fashion_header .object_container{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+header.fashion_header .object1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-color: #563474;
+}
+header.fashion_header .object2{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: #563474;
+    opacity: 0.7;
+}
+header.fashion_header .img_container{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    border: 1px solid #fff;
+    padding: 5px;
+    left: -50px;
+}
+header.fashion_header .img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rounded_gradiant_lg_btn{
+    transition: background-image 0.2s ease-in;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.rounded_gradiant_lg_btn:hover{
+    background-image: linear-gradient(to left, rgb(142, 45, 226), rgb(74, 0, 224));
+}
+@media only screen and (max-width: 1200px) {
+    header.fashion_header .text_container h1{
+        font-size: 5rem;
+    }
+    header.fashion_header .text_container span{
+        color: rgb(0, 0, 0);
+    }
+    header.fashion_header .object1{
+        width: 100%;
+        height: 50%;
+    }
+    header.fashion_header .object2{
+        right: 0;
+        width: 100%;
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header.fashion_header .text_container{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    header.fashion_header .text_container h1{
+        font-size: 4rem;
+    }
+}
+            </code>
+        </pre>
+    </div>
+
+
+    <script src="./highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
