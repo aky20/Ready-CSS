@@ -29,6 +29,7 @@ code *{
 }
 button a{
     text-decoration: none;
+    color: #fff;
 }
 /* Header Blur */
 header.blur_header{
@@ -219,7 +220,131 @@ header.fashion_header .img_container img{
 .rounded_gradiant_lg_btn:hover{
     background-image: linear-gradient(to left, rgb(142, 45, 226), rgb(74, 0, 224));
 }
+
+header.photo_header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+header.photo_header .text_wrapper{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+header.photo_header .text_wrapper .text_container{
+    padding: 50px;
+    border: double #e8a64e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3b3c38;
+}
+header.photo_header .text_container h1, .text_container h2{
+    margin: 0;
+}
+header.photo_header .text_container h1{
+    font-family: 'Pacifico', cursive;
+    color: #e8a64e;
+    font-size: 6rem;
+}
+header.photo_header .image_wrapper{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+header.photo_header .bg_lg_btn{
+    cursor: pointer;
+    background-color: #660077;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    padding: 15px 16px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+    transition: all 0.1s ease-in;
+}
+header.photo_header .bg_lg_btn:hover{
+    background-color: #390142;
+}
+header.photo_header .image_wrapper .ia, .image_wrapper .ib, .image_wrapper .ic, .image_wrapper .id, .image_wrapper .ie, .image_wrapper .if, .image_wrapper .ig, .image_wrapper .ih{
+    position: absolute;
+}
+header.photo_header .image_wrapper .ia img, .image_wrapper .ib img, .image_wrapper .ic img, .image_wrapper .id img, .image_wrapper .ie img, .image_wrapper .if img, .image_wrapper .ig img, .image_wrapper .ih img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header.photo_header .image_wrapper .ia{
+    width: 200px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+header.photo_header .image_wrapper .ib{
+    width: 300px;
+    height: 380px;
+    top: 0;
+    left: 60px;
+    clip-path: polygon(51% 0, 100% 0, 65% 100%, 0 51%);
+}
+header.photo_header .image_wrapper .ic{
+    width: 300px;
+    height: 200px;
+    top: 0;
+    left: 300px;
+    clip-path: polygon(24% 0, 0 128%, 100% 104%);
+}
+header.photo_header .image_wrapper .id{
+    width: 297px;
+    height: 200px;
+    top: 0;
+    left: 387px;
+    clip-path: polygon(100% 0, 0 0, 100% 135%);
+}
+header.photo_header .image_wrapper .ie{
+    width: 314px;
+    height: 250px;
+    top: 200px;
+    left: 0;
+    clip-path: polygon(0 28%, 17% 0, 100% 101%, 0% 100%);
+}
+header.photo_header .image_wrapper .if{
+    width: 227px;
+    height: 400px;
+    top: 208px;
+    left: 261px;
+    clip-path: polygon(23% 0, 100% 0, 105% 100%, 0 45%);
+}
+header.photo_header .image_wrapper .ig{
+    width: 187px;
+    height: 550px;
+    top: 208px;
+    left: 497px;
+}
+header.photo_header .image_wrapper .ih{
+    width: 489px;
+    height: 300px;
+    top: 459px;
+    left: 0;
+    clip-path: polygon(0 0, 66% 0, 132% 100%, 0 100%);
+}      
 @media only screen and (max-width: 1200px) {
+    header.photo_header .text_container h1{
+        font-size: 3rem;
+    }
+    header.photo_header .text_container h2{
+        font-size: 1.2rem;
+    }
+    header.photo_header .text_container{
+        width: 50%;
+    }
     header.fashion_header .text_container h1{
         font-size: 5rem;
     }
@@ -235,8 +360,31 @@ header.fashion_header .img_container img{
         width: 100%;
         height: 50%;
     }
-}
-@media only screen and (max-width: 600px) {
+}  
+@media only screen and (max-width: 700px) {
+    header.photo_header header{
+        position: relative;
+    }
+    header.photo_header .text_wrapper{
+        position: static;
+        width: 0;
+    }
+    header.photo_header .text_wrapper .text_container{
+        border: double #fff;
+    }
+    header.photo_header .text_container h1, .text_container h2{
+        color: #fff;
+    }
+    header.photo_header .image_wrapper{
+        width: 100%;
+    }
+    header.photo_header .image_wrapper .dark_wrapper{
+        background-color: #e8a64e;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.8;
+    }
     header.fashion_header .text_container{
         left: 50%;
         transform: translate(-50%, -50%);
