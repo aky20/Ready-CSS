@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu_bar.css">
+    <title>menu bar</title>
+</head>
+<body>
+    <nav>
+        <h1>logo</h1>
+        <ul id="nav_items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="hamburger_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>  
+    </nav>
+    <div class="code_container" id="link_btn">
+        <pre class="code_html">
+            <code class="language-html">
+&lt;nav&gt;
+    &lt;h1&gt;logo&lt;/h1&gt;
+    &lt;ul id=&quot;nav_items&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div id=&quot;hamburger_menu&quot;&gt;
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;h-6 w-6&quot; fill=&quot;none&quot; viewBox=&quot;0 0 24 24&quot; stroke=&quot;currentColor&quot;&gt;
+            &lt;path stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M4 6h16M4 12h16M4 18h16&quot; /&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;  
+&lt;/nav&gt;
+            </code>
+        </pre>
+        <pre class="code_css">
+            <code class="language-css">
+body{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(to right, rgb(101, 153, 153), rgb(244, 121, 31));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* background-color: blueviolet; */
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+nav *{
+    margin: 0;
+    padding: 0;
+}
+nav h1{
+    float: left;
+    line-height: 75px;
+    height: 75px;
+    color: #fff;
+}
+nav ul{
+    width: 30%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    transition: right 0.4s ease-in-out;
+}
+nav ul li a{
+    color: #fff;
+    display: block;
+    line-height: 75px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(216, 216, 216);
+}
+nav #hamburger_menu svg{
+    color: #fff;
+    width: 30px;
+    height: 75px;
+    line-height: 75px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+nav #hamburger_menu svg:hover{
+    color: cadetblue;
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        padding: 0 30px;
+    }
+    nav #hamburger_menu svg{
+        display: inline-block;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 75px);
+        top: 75px;
+        right: 100%;   
+        background-color: rgb(101, 153, 153);
+    }
+    nav ul.active{
+        right: 0;
+    }
+    nav ul li a{
+        padding-left: 30px;
+    }
+    nav ul li a:hover{
+        background-color: rgb(64, 107, 107);
+    }
+}
+            </code>
+        </pre>
+        <pre class="code_css">
+            <code class="language-js">
+var open = false;
+document.getElementById("hamburger_menu").addEventListener("click", ()=>{
+    console.log("clicked")
+    if(open){
+        document.getElementById("nav_items").classList.remove("active")
+        open = false
+    }else{
+        document.getElementById("nav_items").classList.add("active")
+        open = true
+    }
+})
+            </code>
+        </pre>
+    </div>
+
+
+    <script>
+        var open = false;
+        document.getElementById("hamburger_menu").addEventListener("click", ()=>{
+            console.log("clicked")
+            if(open){
+                document.getElementById("nav_items").classList.remove("active")
+                open = false
+            }else{
+                document.getElementById("nav_items").classList.add("active")
+                open = true
+            }
+        })
+    </script>
+    <script src="./highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
