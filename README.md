@@ -7,3 +7,4 @@
 - [card](https://aky20.github.io/Ready-CSS/card.html)
 - [form](https://aky20.github.io/Ready-CSS/form.html)
 - [table](https://aky20.github.io/Ready-CSS/table.html)
+- [menu](https://aky20.github.io/Ready-CSS/menu_bar.html)
